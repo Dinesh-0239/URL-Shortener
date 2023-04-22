@@ -7,7 +7,7 @@ import pyshorteners
 
 #Method for shorting Given URL
 def url_shortener():
-    global url,shorty,short_url
+    global url,short_url
     if short_url.get():
         short_url.set("")
     if url.get():
@@ -54,7 +54,7 @@ Button(main_frame,text="Get Short URL",bg="#34282C",font=("timesnewroman",14,"bo
 Label(main_frame,text="URL ",font=("timesnewroman",12,"bold"),fg="#34282C",bg="snow").place(x=10,y=150)
 
 #from here we get shorten url
-short = Entry(main_frame,textvariable=short_url,font=("timesnewroman",12),bg="snow",fg="#34282C",relief=RAISED).place(x=100,y=150)
+Entry(main_frame,textvariable=short_url,font=("timesnewroman",12),bg="snow",fg="#34282C",relief=RAISED).place(x=100,y=150)
 
 #Window mainloop
 app_window.mainloop()
